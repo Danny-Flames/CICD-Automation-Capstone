@@ -185,6 +185,6 @@ Deploy the web application using Docker.
 This project demonstrates how to automate deployment using Jenkins, Git, Docker, and a CI/CD pipeline. The setup ensures continuous integration, efficient testing, and seamless deployment of the web application.
 
 ## Author
-Name: Ekpa Daniel Egwoke
-Email: daniel.ekpa@yahoo.com
-LinkedIn: https://www.linkedin.com/in/ekpa-daniel/
+- Name: Ekpa Daniel Egwoke
+- Email: daniel.ekpa@yahoo.com
+- LinkedIn: https://www.linkedin.com/in/ekpa-daniel/
