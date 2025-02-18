@@ -98,7 +98,7 @@ Develop a Jenkins Pipeline to automate deployment.
         stages {
             stage('Clone Repository') {
                 steps {
-                    git 'https://github.com/your-repo.git'
+                    git 'https://github.com/Danny-Flames/CICD-Automation-Capstone.git'
                 }
             }
             stage('Build') {
@@ -114,13 +114,13 @@ Develop a Jenkins Pipeline to automate deployment.
             }
             stage('Docker Build & Push') {
                 steps {
-                    sh 'docker build -t your-dockerhub-username/app:latest .'
-                    sh 'docker push your-dockerhub-username/app:latest'
+                    sh 'docker build -t dannyflames/app:latest .'
+                    sh 'docker push dannyflames/app:latest'
                 }
             }
             stage('Deploy') {
                 steps {
-                    sh 'docker run -d -p 80:80 your-dockerhub-username/app:latest'
+                    sh 'docker run -d -p 80:80 dannyflames/app:latest'
                 }
             }
         }
@@ -146,13 +146,13 @@ Automate Docker image creation and push it to a registry.
 
 - Login to Docker Hub:
     ```sh
-        docker login -u your-dockerhub-username -p your-password
+        docker login -u dannyflames -p my-password
     ```
 
 - Modify Jenkinsfile to include:
     ```sh
-        docker build -t your-dockerhub-username/app:latest .
-        docker push your-dockerhub-username/app:latest
+        docker build -t dannyflames/app:latest .
+        docker push dannyflames/app:latest
     ```
 
 
@@ -164,7 +164,7 @@ Deploy the web application using Docker.
 #### Steps:
 - Run the container:
     ```sh
-        docker run -d -p 8080:80 your-dockerhub-username/app:latest
+        docker run -d -p 8080:80 dannyflames/app:latest
     ```
 
 - Access the application in your browser:
