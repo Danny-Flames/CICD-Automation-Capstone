@@ -60,10 +60,15 @@ Integrate Jenkins with a version control system for automatic build triggers.
     - Add GitHub credentials (Manage Jenkins > Manage Credentials).
     - Configure repository URL in Jenkins jobs.
 
-- (b) Enable Webhooks for automatic builds:
-    - In GitHub, go to Settings > Webhooks.
-    - Add a new webhook:
-        - Payload URL: http://your-jenkins-server/github-webhook/
+- (b) Enable POLL SCM as the Build Trigger:
+    - Open the Jenkins job configuration.
+    - Scroll to the "Build Triggers" section.
+    - Select "Poll SCM" and enter a schedule (e.g., every 5 minutes)
+        ```sh
+            H/5 * * * *
+        ```
+        
+        - The configuration above checks for new commits every 5 minutes. 
 
 
 ### 3. Jenkins Freestyle Jobs for Build and Unit Tests
