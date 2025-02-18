@@ -94,7 +94,7 @@ Set up Jenkins Freestyle jobs to build the application and run tests.
 Develop a Jenkins Pipeline to automate deployment.
 
 #### Steps:
-- Create a Jenkinsfile in your repository:
+- Create a Jenkinsfile in my repository:
 
     ```sh
         pipeline {
@@ -133,7 +133,7 @@ Develop a Jenkins Pipeline to automate deployment.
     ```
 
 - Create a new Pipeline Job in Jenkins.
-- Point to the Jenkinsfile in your repository.
+- Point to the Jenkinsfile in my repository.
 - Save and run the pipeline.
 
 
@@ -172,7 +172,7 @@ Deploy the web application using Docker.
         docker run -d -p 8080:80 dannyflames/app:latest
     ```
 
-- Access the application in your browser:
+- Access the application in my browser:
     ```sh
         http://localhost:8080
     ```
