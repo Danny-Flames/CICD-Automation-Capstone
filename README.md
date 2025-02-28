@@ -192,4 +192,3 @@ This project demonstrates how to automate deployment using Jenkins, Git, Docker,
 ## Author
 - Name: Ekpa Daniel Egwoke
 - Email: daniel.ekpa@yahoo.com
-- LinkedIn: https://www.linkedin.com/in/ekpa-daniel/
